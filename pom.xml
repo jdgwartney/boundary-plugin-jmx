@@ -33,6 +33,7 @@
 							<arguments>
 								<argument>-X</argument>
 								<argument>PUT</argument>
+								<argument>-s</argument>
 								<argument>-u</argument>
 								<argument>${boundary-metrics-user}:${boundary-metrics-password}</argument>
 								<argument>https://api.graphdat.com/v1/plugins/private/${project.name}/${boundary-github-repo-parent}/${project.artifactId}</argument>
