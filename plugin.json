@@ -1,0 +1,37 @@
+{
+    "description": "Reports metrics via querying a JMX agent",
+    "icon" : "icon.png",
+    "command": "lua index.py",
+    "metrics" : [
+                 "JMX_ATTRIBUTE",
+    "dashboards" : [],
+    "postExtract" : "lua postinstall.lua",
+    "paramArray": { "itemTitle": [ "name" ], "schemaTitle": "JMX Attribute" },
+    "paramSchema": [
+        {
+            "title": "Attribute Name",
+            "name": "attr_name",
+            "description": "Name of JMX attribute",
+            "type": "string",
+            "default": "",
+            "required": true
+        },
+        {
+            "title": "Poll Time (sec)",
+            "name": "pollInterval",
+            "description": "Poll Interval to collect the JMX attribute. Defaults 5 seconds",
+            "type": "string",
+            "default": 5,
+            "required": false
+        },
+        {
+            "title": "Debug",
+            "name": "debug",
+            "description": "Turns on the debugging of the collection of the JMX attribute",
+            "type": "boolean",
+            "default": false,
+            "required": false
+	}
+    ]
+}
+
