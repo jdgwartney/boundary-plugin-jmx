@@ -1,12 +1,17 @@
 package com.boundary.metric.plugin.jmx;
 
-public class Plugin {
-  
-  public Plugin() {
-  }
+import java.util.Random;
 
-  public static void main(String args[]) {
-     System.out.println("JMX_ATTRIBUTE 100 localhost");
-  }
+public class Plugin {
+
+	public Plugin() {
+	}
+
+	public static void main(String args[]) {
+
+		int random = new Random().nextInt(100);
+
+		System.out.println("JMX_ATTRIBUTE " + random + " localhost");
+	}
 
 }
