@@ -1,11 +1,9 @@
 {
     "description": "Reports metrics via querying a JMX agent",
     "icon" : "icon.png",
-    "command": "lua index.py",
-    "metrics" : [
-                 "JMX_ATTRIBUTE",
-    "dashboards" : [],
-    "postExtract" : "lua postinstall.lua",
+    "command": "java -jar target/boundary-plugin-jmx-00.01.00.jar com.boundary.metric.plugin.jmx.Plugin",
+    "metrics": [ "JMX_ATTRIBUTE"]
+    "postExtract": "java -jar target/boundary-plugin-jmx-00.01.00.jar com.boundary.metric.plugin.PostInstall",
     "paramArray": { "itemTitle": [ "name" ], "schemaTitle": "JMX Attribute" },
     "paramSchema": [
         {

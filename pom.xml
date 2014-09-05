@@ -35,7 +35,7 @@
 								<argument>PUT</argument>
 								<argument>-u</argument>
 								<argument>${boundary-metrics-user}:${boundary-metrics-password}</argument>
-								<argument>https://api.graphdat.com/v1/plugins/private/${project.name}/${boundary-github-repot-parent}/${project.artifactId}</argument>
+								<argument>https://api.graphdat.com/v1/plugins/private/${project.name}/${boundary-github-repo-parent}/${project.artifactId}</argument>
 							</arguments>
 						</configuration>
 					</execution>
