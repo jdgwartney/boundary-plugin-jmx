@@ -7,10 +7,14 @@ public class Plugin {
 	public Plugin() {
 	}
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws InterruptedException {
 
-		int random = new Random().nextInt(100);
+		while (true) {
 
-		System.out.println("JMX_ATTRIBUTE " + random + " localhost");
+			int random = new Random().nextInt(100);
+
+			System.out.println("JMX_ATTRIBUTE " + random + " localhost");
+			Thread.sleep(5000);
+		}
 	}
 }
