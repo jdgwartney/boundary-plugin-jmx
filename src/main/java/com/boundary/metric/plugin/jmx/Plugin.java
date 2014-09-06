@@ -13,5 +13,4 @@ public class Plugin {
 
 		System.out.println("JMX_ATTRIBUTE " + random + " localhost");
 	}
-
 }
